@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainListingHolder"
+    android:padding="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/border"
+        android:id="@+id/infoHolder">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:id="@+id/listingBitMap"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_menu_camera"
+                android:padding="2dp"
+                android:backgroundTint="@color/colorPrimaryDark"/>
+            <ProgressBar
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/imageLoad"/>
+        </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/listingHolder"
+                android:padding="2dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Title"
+                    android:id="@+id/listingTitle"
+                    android:textSize="12dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="additionalInfo"
+                    android:id="@+id/listingInfo"
+                    android:textSize="10dp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/scoreHolder"
+                android:gravity="right"
+                android:layout_gravity="center"
+                android:padding="4dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/listingUpVote"
+                    android:gravity="center"
+                    android:text="up"
+                    android:textSize="8dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/listingScore"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:hint="score"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/listingDownVote"
+                    android:gravity="center"
+                    android:text="down"
+                    android:textSize="8dp"/>
+            </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
